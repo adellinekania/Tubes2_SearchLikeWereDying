@@ -9,10 +9,20 @@ class BFS
         //terima input dulu nanti disesuaiin sama GUI
         string input_dict = @"d:\";
         bool flag = true;
-        string file_name = "README.txt";
+        string file_name = "answer.txt";
         DirectoryInfo dict = new DirectoryInfo(input_dict);
         DirectoryInfo [] directories_list = dict.GetDirectories();
-        if(!searchDepth(dict, file_name)){
+        //var filePaths = dict.EnumerateFiles(input_dict, new EnumerationOptions{
+        //        IgnoreInaccessible = true,
+        //        RecurseSubdirectories = true
+        //});
+        //foreach (var files in filePaths){
+        //    Console.WriteLine(files.Name);
+        //}
+
+
+        if(!searchDepth2(dict, file_name)){
+            Console.WriteLine("Ini apa");
             while (directories_list.Length != 0 && flag){
                 if(searchDirectory(directories_list, file_name)){
                     flag = false;
@@ -78,15 +88,28 @@ class BFS
         string directory3 = Path.GetDirectoryName(dict2.FullName);
         if(directory3  != null){
             var filePaths = dict2.EnumerateFiles(directory3, new EnumerationOptions{
-            IgnoreInaccessible = true,
-            RecurseSubdirectories = true
+                IgnoreInaccessible = true,
+                RecurseSubdirectories = true
             });
             foreach (var files in filePaths){
+                Console.WriteLine(files.Name);
                 if(files.Name == name){
                     return true;
                 }
             }
             return false;
+        }
+        return false;
+    }
+
+    //Khusus untuk kasus pertama karena SearchDepth gak bisa ngehandle root folder
+    public static bool searchDepth2(DirectoryInfo dict2, string name){
+        FileInfo [] file = dict2.GetFiles();
+        foreach (FileInfo f1 in file){
+            Console.WriteLine(f1.Name);
+            if(f1.Name == name){
+                return true;
+            }
         }
         return false;
     }
