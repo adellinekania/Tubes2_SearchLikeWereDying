@@ -3,10 +3,15 @@ namespace FolderCrawling
 {
 	public class DirectoryTree
 	{
-		private readonly string _data;
+		private string _data;
 		private readonly DirectoryTree _parent;
 		private readonly int _level;
 		private readonly List<DirectoryTree> _children;
+
+		public changeData(string _newData)
+        {
+			this._data = _newData;
+        }
 
 		public DirectoryTree(string data)
 		{

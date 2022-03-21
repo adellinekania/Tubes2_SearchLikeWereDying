@@ -95,7 +95,7 @@ namespace FolderCrawling
                     else
                     {
                         graph.AddEdge(parent, child).Attr.Color =
-                        Microsoft.Msagl.Drawing.Color.Pink;
+                        Microsoft.Msagl.Drawing.Color.Black;
                     }
 
                     Microsoft.Msagl.Drawing.Node parentNode = graph.FindNode(parent);
@@ -114,11 +114,6 @@ namespace FolderCrawling
                             parentNode.Attr.Color = Microsoft.Msagl.Drawing.Color.Red;
                             childNode.Attr.Color = Microsoft.Msagl.Drawing.Color.Red;
                         }
-                    }
-                    else
-                    {
-                        parentNode.Attr.Color = Microsoft.Msagl.Drawing.Color.Blue;
-                        childNode.Attr.Color = Microsoft.Msagl.Drawing.Color.Blue;
                     }
                 }
                 displayTreeDirs(tree.Parent, graph, color);
