@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace FolderCrawling
 {
     public partial class GUI : Form
@@ -71,16 +73,50 @@ namespace FolderCrawling
 
             GUIOutput output = new GUIOutput();
 
-            // INI contoh method buatt liatt treenya, buatt gambar tree nya bisa panggil method
-            // displayTreeDirs: nampilin graphnyaaa, dipanggil di dalam printTreeDirs
-            // INI digantii sama DFS atauu BFSnyaa, nantii difungsii DFS/BFS manggil method printTreeDirs
-            // Cara manggilnya, mulai dari root yaa.., jadii setiapp root manggil printTreeDirs
-            string[] pathDirs = { @"C:\Users\Asus\Pictures\New folder\tes\tes444\huhuuu.txt" };
-            output.printTreeDirs(directoryTree, graph, pathDirs);
+
+            if (isBFS)
+            {
+                BFS bfs = new BFS();
+                List<DirectoryTree> treeList = new List<DirectoryTree>();
+                treeList.Add(directoryTree);
+
+                if (isAllOccurence)
+                {
+                    // BFS kalo semua muncul
+                }
+                else
+                {
+                    bfs.searchBFS(treeList, 0, graph, fileName, comboBoxFile, textFolderRoute) ;
+                }
+            }
+
+            // DFSSSS
+            else
+            {
+                if (isAllOccurence)
+                {
+
+                }
+                else
+                {
+
+                }
+            }
 
             graphViewer.Graph = graph;
             graphContainer.Controls.Add(graphViewer);
         }
 
+        private void buttonGoToFile_Click(object sender, EventArgs e)
+        {
+            FileInfo parent = new FileInfo(comboBoxFile.SelectedItem.ToString());
+            string link = parent.DirectoryName.ToString();
+            ProcessStartInfo startInfo = new ProcessStartInfo
+            {
+                Arguments = link,
+                FileName = "explorer.exe"
+            };
+            Process.Start(startInfo);
+        }
     }
 }

@@ -46,10 +46,11 @@
             this.textFileDirectory = new System.Windows.Forms.RichTextBox();
             this.graphContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.textFilePathHeader = new System.Windows.Forms.TextBox();
-            this.textFilePath = new System.Windows.Forms.RichTextBox();
             this.textFolderRouteHeader = new System.Windows.Forms.TextBox();
             this.textFolderRoute = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.comboBoxFile = new System.Windows.Forms.ComboBox();
+            this.buttonGoToFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -68,7 +69,7 @@
             this.buttonChooseDirectory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonChooseDirectory.Font = new System.Drawing.Font("Berlin Sans FB", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonChooseDirectory.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.buttonChooseDirectory.Location = new System.Drawing.Point(140, 247);
+            this.buttonChooseDirectory.Location = new System.Drawing.Point(93, 247);
             this.buttonChooseDirectory.Name = "buttonChooseDirectory";
             this.buttonChooseDirectory.Size = new System.Drawing.Size(235, 46);
             this.buttonChooseDirectory.TabIndex = 2;
@@ -81,7 +82,7 @@
             this.textBox2.BackColor = System.Drawing.SystemColors.Window;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(611, 120);
+            this.textBox2.Location = new System.Drawing.Point(564, 120);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(121, 40);
@@ -90,7 +91,7 @@
             // 
             // richTextTes
             // 
-            this.richTextTes.Location = new System.Drawing.Point(100, 765);
+            this.richTextTes.Location = new System.Drawing.Point(53, 765);
             this.richTextTes.Name = "richTextTes";
             this.richTextTes.Size = new System.Drawing.Size(416, 123);
             this.richTextTes.TabIndex = 13;
@@ -102,7 +103,7 @@
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSearch.Font = new System.Drawing.Font("Berlin Sans FB", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonSearch.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.buttonSearch.Location = new System.Drawing.Point(140, 709);
+            this.buttonSearch.Location = new System.Drawing.Point(104, 709);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(329, 50);
             this.buttonSearch.TabIndex = 14;
@@ -128,7 +129,7 @@
             this.textInput.BackColor = System.Drawing.SystemColors.Window;
             this.textInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textInput.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textInput.Location = new System.Drawing.Point(140, 120);
+            this.textInput.Location = new System.Drawing.Point(93, 120);
             this.textInput.Name = "textInput";
             this.textInput.ReadOnly = true;
             this.textInput.Size = new System.Drawing.Size(80, 40);
@@ -140,7 +141,7 @@
             this.textChooseDirectoryHeader.BackColor = System.Drawing.SystemColors.Window;
             this.textChooseDirectoryHeader.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textChooseDirectoryHeader.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.textChooseDirectoryHeader.Location = new System.Drawing.Point(140, 199);
+            this.textChooseDirectoryHeader.Location = new System.Drawing.Point(93, 199);
             this.textChooseDirectoryHeader.Name = "textChooseDirectoryHeader";
             this.textChooseDirectoryHeader.ReadOnly = true;
             this.textChooseDirectoryHeader.Size = new System.Drawing.Size(277, 27);
@@ -152,7 +153,7 @@
             this.textInputFileHeader.BackColor = System.Drawing.SystemColors.Window;
             this.textInputFileHeader.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textInputFileHeader.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.textInputFileHeader.Location = new System.Drawing.Point(140, 374);
+            this.textInputFileHeader.Location = new System.Drawing.Point(93, 374);
             this.textInputFileHeader.Name = "textInputFileHeader";
             this.textInputFileHeader.ReadOnly = true;
             this.textInputFileHeader.Size = new System.Drawing.Size(277, 27);
@@ -163,7 +164,7 @@
             // 
             this.textInputFile.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textInputFile.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textInputFile.Location = new System.Drawing.Point(140, 422);
+            this.textInputFile.Location = new System.Drawing.Point(93, 422);
             this.textInputFile.Name = "textInputFile";
             this.textInputFile.Size = new System.Drawing.Size(329, 27);
             this.textInputFile.TabIndex = 20;
@@ -174,7 +175,7 @@
             this.textInputSearchingMethodHeader.BackColor = System.Drawing.SystemColors.Window;
             this.textInputSearchingMethodHeader.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textInputSearchingMethodHeader.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.textInputSearchingMethodHeader.Location = new System.Drawing.Point(140, 562);
+            this.textInputSearchingMethodHeader.Location = new System.Drawing.Point(93, 562);
             this.textInputSearchingMethodHeader.Name = "textInputSearchingMethodHeader";
             this.textInputSearchingMethodHeader.ReadOnly = true;
             this.textInputSearchingMethodHeader.Size = new System.Drawing.Size(277, 27);
@@ -187,7 +188,7 @@
             this.buttonBFS.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.buttonBFS.Font = new System.Drawing.Font("Berlin Sans FB", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonBFS.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.buttonBFS.Location = new System.Drawing.Point(140, 608);
+            this.buttonBFS.Location = new System.Drawing.Point(93, 608);
             this.buttonBFS.Name = "buttonBFS";
             this.buttonBFS.Size = new System.Drawing.Size(67, 27);
             this.buttonBFS.TabIndex = 22;
@@ -201,7 +202,7 @@
             this.buttonDFS.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.buttonDFS.Font = new System.Drawing.Font("Berlin Sans FB", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonDFS.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.buttonDFS.Location = new System.Drawing.Point(140, 641);
+            this.buttonDFS.Location = new System.Drawing.Point(93, 641);
             this.buttonDFS.Name = "buttonDFS";
             this.buttonDFS.Size = new System.Drawing.Size(69, 27);
             this.buttonDFS.TabIndex = 23;
@@ -214,7 +215,7 @@
             this.checkBoxFindAll.AutoSize = true;
             this.checkBoxFindAll.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.checkBoxFindAll.ForeColor = System.Drawing.Color.Black;
-            this.checkBoxFindAll.Location = new System.Drawing.Point(140, 483);
+            this.checkBoxFindAll.Location = new System.Drawing.Point(93, 483);
             this.checkBoxFindAll.Name = "checkBoxFindAll";
             this.checkBoxFindAll.Size = new System.Drawing.Size(175, 24);
             this.checkBoxFindAll.TabIndex = 24;
@@ -227,7 +228,7 @@
             this.textFileDirectory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textFileDirectory.Font = new System.Drawing.Font("Berlin Sans FB", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textFileDirectory.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textFileDirectory.Location = new System.Drawing.Point(140, 306);
+            this.textFileDirectory.Location = new System.Drawing.Point(93, 306);
             this.textFileDirectory.Name = "textFileDirectory";
             this.textFileDirectory.ReadOnly = true;
             this.textFileDirectory.Size = new System.Drawing.Size(289, 62);
@@ -236,7 +237,7 @@
             // 
             // graphContainer
             // 
-            this.graphContainer.Location = new System.Drawing.Point(611, 175);
+            this.graphContainer.Location = new System.Drawing.Point(564, 175);
             this.graphContainer.Name = "graphContainer";
             this.graphContainer.Size = new System.Drawing.Size(1223, 493);
             this.graphContainer.TabIndex = 27;
@@ -246,28 +247,19 @@
             this.textFilePathHeader.BackColor = System.Drawing.SystemColors.Window;
             this.textFilePathHeader.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textFilePathHeader.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.textFilePathHeader.Location = new System.Drawing.Point(611, 760);
+            this.textFilePathHeader.Location = new System.Drawing.Point(564, 789);
             this.textFilePathHeader.Name = "textFilePathHeader";
             this.textFilePathHeader.ReadOnly = true;
-            this.textFilePathHeader.Size = new System.Drawing.Size(121, 27);
+            this.textFilePathHeader.Size = new System.Drawing.Size(98, 27);
             this.textFilePathHeader.TabIndex = 30;
             this.textFilePathHeader.Text = "File Path";
-            // 
-            // textFilePath
-            // 
-            this.textFilePath.Font = new System.Drawing.Font("Berlin Sans FB", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textFilePath.Location = new System.Drawing.Point(611, 804);
-            this.textFilePath.Name = "textFilePath";
-            this.textFilePath.Size = new System.Drawing.Size(1221, 108);
-            this.textFilePath.TabIndex = 31;
-            this.textFilePath.Text = "";
             // 
             // textFolderRouteHeader
             // 
             this.textFolderRouteHeader.BackColor = System.Drawing.SystemColors.Window;
             this.textFolderRouteHeader.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textFolderRouteHeader.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.textFolderRouteHeader.Location = new System.Drawing.Point(611, 706);
+            this.textFolderRouteHeader.Location = new System.Drawing.Point(564, 714);
             this.textFolderRouteHeader.Name = "textFolderRouteHeader";
             this.textFolderRouteHeader.ReadOnly = true;
             this.textFolderRouteHeader.Size = new System.Drawing.Size(150, 27);
@@ -277,9 +269,9 @@
             // textFolderRoute
             // 
             this.textFolderRoute.Font = new System.Drawing.Font("Berlin Sans FB", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textFolderRoute.Location = new System.Drawing.Point(758, 701);
+            this.textFolderRoute.Location = new System.Drawing.Point(711, 692);
             this.textFolderRoute.Name = "textFolderRoute";
-            this.textFolderRoute.Size = new System.Drawing.Size(1076, 45);
+            this.textFolderRoute.Size = new System.Drawing.Size(1076, 87);
             this.textFolderRoute.TabIndex = 33;
             this.textFolderRoute.Text = "";
             // 
@@ -287,10 +279,32 @@
             // 
             this.label2.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(552, 103);
+            this.label2.Location = new System.Drawing.Point(515, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(3, 850);
             this.label2.TabIndex = 35;
+            // 
+            // comboBoxFile
+            // 
+            this.comboBoxFile.FormattingEnabled = true;
+            this.comboBoxFile.Location = new System.Drawing.Point(711, 832);
+            this.comboBoxFile.Name = "comboBoxFile";
+            this.comboBoxFile.Size = new System.Drawing.Size(1076, 33);
+            this.comboBoxFile.TabIndex = 36;
+            // 
+            // buttonGoToFile
+            // 
+            this.buttonGoToFile.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonGoToFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGoToFile.Font = new System.Drawing.Font("Berlin Sans FB", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonGoToFile.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.buttonGoToFile.Location = new System.Drawing.Point(564, 832);
+            this.buttonGoToFile.Name = "buttonGoToFile";
+            this.buttonGoToFile.Size = new System.Drawing.Size(125, 34);
+            this.buttonGoToFile.TabIndex = 37;
+            this.buttonGoToFile.Text = "Go To File";
+            this.buttonGoToFile.UseVisualStyleBackColor = false;
+            this.buttonGoToFile.Click += new System.EventHandler(this.buttonGoToFile_Click);
             // 
             // GUI
             // 
@@ -298,10 +312,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1386, 915);
+            this.Controls.Add(this.buttonGoToFile);
+            this.Controls.Add(this.comboBoxFile);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textFolderRoute);
             this.Controls.Add(this.textFolderRouteHeader);
-            this.Controls.Add(this.textFilePath);
             this.Controls.Add(this.textFilePathHeader);
             this.Controls.Add(this.graphContainer);
             this.Controls.Add(this.textFileDirectory);
@@ -345,9 +360,10 @@
         private RichTextBox textFileDirectory;
         private FlowLayoutPanel graphContainer;
         private TextBox textFilePathHeader;
-        private RichTextBox textFilePath;
         private TextBox textFolderRouteHeader;
         private RichTextBox textFolderRoute;
         private Label label2;
+        private ComboBox comboBoxFile;
+        private Button buttonGoToFile;
     }
 }

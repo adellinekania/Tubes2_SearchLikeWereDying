@@ -98,23 +98,30 @@ namespace FolderCrawling
                         Microsoft.Msagl.Drawing.Color.Black;
                     }
 
-                    Microsoft.Msagl.Drawing.Node parentNode = graph.FindNode(parent);
-                    Microsoft.Msagl.Drawing.Node childNode = graph.FindNode(child);
+                    
+                }
 
-                    if (color.Equals("blue"))
+                Microsoft.Msagl.Drawing.Node parentNode = graph.FindNode(parent);
+                Microsoft.Msagl.Drawing.Node childNode = graph.FindNode(child);
+
+                if (color.Equals("blue"))
+                {
+                    parentNode.Attr.Color = Microsoft.Msagl.Drawing.Color.Blue;
+                    childNode.Attr.Color = Microsoft.Msagl.Drawing.Color.Blue;
+                }
+                else if (color.Equals("red"))
+                {
+                    Microsoft.Msagl.Drawing.Color colorr = parentNode.Attr.Color;
+                    if (colorr != Microsoft.Msagl.Drawing.Color.Blue)
                     {
-                        parentNode.Attr.Color = Microsoft.Msagl.Drawing.Color.Blue;
-                        childNode.Attr.Color = Microsoft.Msagl.Drawing.Color.Blue;
+                        parentNode.Attr.Color = Microsoft.Msagl.Drawing.Color.Red;
+                        childNode.Attr.Color = Microsoft.Msagl.Drawing.Color.Red;
                     }
-                    else if (color.Equals("red"))
-                    {
-                        Microsoft.Msagl.Drawing.Color colorr = parentNode.Attr.Color;
-                        if (colorr != Microsoft.Msagl.Drawing.Color.Blue)
-                        {
-                            parentNode.Attr.Color = Microsoft.Msagl.Drawing.Color.Red;
-                            childNode.Attr.Color = Microsoft.Msagl.Drawing.Color.Red;
-                        }
-                    }
+                }
+                else
+                {
+                    //parentNode.Attr.Color = Microsoft.Msagl.Drawing.Color.Black;
+                    //childNode.Attr.Color = Microsoft.Msagl.Drawing.Color.Black;
                 }
                 displayTreeDirs(tree.Parent, graph, color);
             }
@@ -137,16 +144,11 @@ namespace FolderCrawling
 
         }
 
-        // Method untuk menampilkan path yang cocok dengan file yang dicari
-        public void printAllPath(string path, int i, RichTextBox textFilePath)
-        {
-            textFilePath.Text += i + ". " + path + "\n";
-        }
 
         // Method untuk menampilkan rute folder yang ditelusuri
         public void printFolderRoute(string route, RichTextBox textFolderRoute)
         {
-            textFolderRoute.Text = route;
+            textFolderRoute.Text += route + "-";
         }
     }
 }

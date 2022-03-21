@@ -8,7 +8,7 @@ namespace FolderCrawling
 		private readonly int _level;
 		private readonly List<DirectoryTree> _children;
 
-		public changeData(string _newData)
+		public void changeData(string _newData)
         {
 			this._data = _newData;
         }
