@@ -9,7 +9,7 @@ class BFS
         //terima input dulu nanti disesuaiin sama GUI
         string input_dict = @"d:\";
         bool flag = true;
-        string file_name = "tucilstima.py";
+        string file_name = "lola.txt";
         DirectoryInfo dict = new DirectoryInfo(input_dict);
         DirectoryInfo [] directories_list = dict.GetDirectories();
         //var filePaths = dict.EnumerateFiles(input_dict, new EnumerationOptions{
@@ -33,6 +33,8 @@ class BFS
         }else{
             flag = false;
         }
+        
+        //sementara ini dulu
         if(!flag){
             Console.WriteLine("ketemu");
         }else{
@@ -49,18 +51,23 @@ class BFS
             int string_length = (name.FullName).Length;
             string nama_file = (name.FullName).Substring(2, string_length-2);
             DirectoryInfo new_dict = new DirectoryInfo(nama_file);
-            DirectoryInfo [] directories_list = new_dict.GetDirectories();
-            sum += directories_list.Length;
-
+            if(nama_file != "\\System Volume Information"){
+                DirectoryInfo [] directories_list = new_dict.GetDirectories();
+                sum += directories_list.Length;
+            }
         }
 
         DirectoryInfo [] final_list = new DirectoryInfo[sum];
         int current_idx = 0;
         foreach (DirectoryInfo name_list in dict){
-            DirectoryInfo new_dict2 = new DirectoryInfo(name_list.FullName);
-            DirectoryInfo [] directories_list2 = new_dict2.GetDirectories();
-            directories_list2.CopyTo(final_list, current_idx);
-            current_idx += directories_list2.Length;
+            int string_length = (name_list.FullName).Length;
+            string nama_file = (name_list.FullName).Substring(2, string_length-2);
+            DirectoryInfo new_dict2 = new DirectoryInfo(nama_file);
+            if(nama_file != "\\System Volume Information"){
+                DirectoryInfo [] directories_list2 = new_dict2.GetDirectories();
+                directories_list2.CopyTo(final_list, current_idx);
+                current_idx += directories_list2.Length;
+            }
         }
 
         return final_list;
@@ -76,9 +83,12 @@ class BFS
             string nama = name.FullName;
             string nama_file = nama.Substring(2, string_length-2);
             DirectoryInfo new_dict = new DirectoryInfo(nama_file);
-            if(searchDepth(new_dict, filename)){
-                result = true;
-                return result;
+            //Console.WriteLine(nama_file);
+            if(nama_file != "\\System Volume Information"){
+                if(searchDepth(new_dict, filename)){
+                    result = true;
+                    return result;
+                }
             }
         }
         return false;
@@ -103,7 +113,7 @@ class BFS
     public static bool searchDepth2(DirectoryInfo dict2, string name){
         FileInfo [] file = dict2.GetFiles();
         foreach (FileInfo f1 in file){
-            Console.WriteLine(f1.Name);
+            //Console.WriteLine(f1.Name);
             if(f1.Name == name){
                 return true;
             }
