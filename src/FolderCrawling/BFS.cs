@@ -9,7 +9,7 @@ class BFS
         //terima input dulu nanti disesuaiin sama GUI
         string input_dict = @"d:\";
         bool flag = true;
-        string file_name = "lola.txt";
+        string file_name = "tucilstima.py";
         DirectoryInfo dict = new DirectoryInfo(input_dict);
         DirectoryInfo [] directories_list = dict.GetDirectories();
         //var filePaths = dict.EnumerateFiles(input_dict, new EnumerationOptions{
@@ -22,7 +22,7 @@ class BFS
 
 
         if(!searchDepth2(dict, file_name)){
-            Console.WriteLine("Ini apa");
+            //Console.WriteLine("Ini apa");
             while (directories_list.Length != 0 && flag){
                 if(searchDirectory(directories_list, file_name)){
                     flag = false;
@@ -33,12 +33,8 @@ class BFS
         }else{
             flag = false;
         }
-        
-        //sementara ini dulu
-        if(!flag){
-            Console.WriteLine("ketemu");
-        }else{
-            Console.WriteLine("ngga ketemu");
+        if(flag){
+            Console.WriteLine("File tidak ditemukan.");
         }
 
     } 
@@ -103,6 +99,7 @@ class BFS
         var filePaths = dict2.EnumerateFiles();
         foreach (var files in filePaths){
             if(files.Name == name){
+                Console.WriteLine(dict2.FullName);
                 return true;
             }
         }
