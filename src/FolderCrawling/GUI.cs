@@ -82,7 +82,7 @@ namespace FolderCrawling
 
                 if (isAllOccurence)
                 {
-                    // BFS kalo semua muncul
+                    bfs.searchBFSAllOccur(treeList, 0, graph, fileName, comboBoxFile, textFolderRoute);
                 }
                 else
                 {

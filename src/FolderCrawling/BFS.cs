@@ -61,6 +61,51 @@ namespace FolderCrawling
             }
         }
 
+        public void searchBFSAllOccur(List<DirectoryTree> treeArray, 
+            int index, 
+            Microsoft.Msagl.Drawing.Graph graph, 
+            string searchDir, 
+            ComboBox comboBoxFile,
+            RichTextBox textFolderRoute)
+        {
+            if(index < treeArray.Count)
+            {
+                DirectoryTree tree = treeArray[index];
+                string treeDataPath = tree.Data;
+                string treeData = Path.GetFileName(tree.Data);
+                tree.changeData(treeData + " " + "(" + countNode + ")");
+                countNode++;
+                //printAllPath(treeData, index, textFilePath);
+
+                if(isFound){
+                    output.displayTreeDirs(tree, graph, "black");
+                    isFound = false;
+                }
+
+                if (treeData.Equals(searchDir))
+                {
+                    output.displayTreeDirs(tree, graph, "blue");
+                    comboBoxFile.Items.Add(treeDataPath);
+                    isFound = true;
+                }
+                else
+                {
+                    output.displayTreeDirs(tree, graph, "red");
+                }
+                output.printFolderRoute(treeData, textFolderRoute);
+
+                int countChild = tree.Count;
+                for (int i = 0; i < countChild; i++)
+                {
+                    treeArray.Add(tree[i]);
+                }
+                index++;
+                searchBFS(treeArray, index, graph, searchDir, comboBoxFile, textFolderRoute);
+            }
+        }
+
+
+
 
         // public static void Main()
         // {

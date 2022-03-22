@@ -21,3 +21,26 @@ D:\IF Semester 4\Strategi Algoritma\Tubes2_SearchLikeWereDying\src\FolderCrawlin
 D:\IF Semester 4\Strategi Algoritma\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\Microsoft.Msagl.GraphViewerGdi.dll
 D:\IF Semester 4\Strategi Algoritma\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\Microsoft.Msagl.WpfGraphControl.dll
 D:\IF Semester 4\Strategi Algoritma\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.csproj.CopyComplete
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\FolderCrawling.exe
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\FolderCrawling.deps.json
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\FolderCrawling.runtimeconfig.json
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\FolderCrawling.dll
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\FolderCrawling.pdb
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\AutomaticGraphLayout.dll
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\AutomaticGraphLayout.Drawing.dll
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\Microsoft.Msagl.GraphViewerGdi.dll
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\Microsoft.Msagl.WpfGraphControl.dll
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.csproj.AssemblyReference.cache
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.GUI.resources
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.Properties.Resources.resources
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.csproj.GenerateResource.cache
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.GeneratedMSBuildEditorConfig.editorconfig
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.AssemblyInfoInputs.cache
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.AssemblyInfo.cs
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.csproj.CoreCompileInputs.cache
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.csproj.CopyComplete
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.dll
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\refint\FolderCrawling.dll
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.pdb
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.genruntimeconfig.cache
+D:\Semester4\StrategiAlgoritma\Tubes2_SearchLikeWereDying\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\ref\FolderCrawling.dll
