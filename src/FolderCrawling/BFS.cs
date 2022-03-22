@@ -46,7 +46,7 @@ namespace FolderCrawling
                 tree_list.Add(tree[i]);
             }
 
-            while (tree_list.Count != 0)
+            while (tree_list.Count != 0 && !isFound)
             {
                 if (searchTreeList(tree_list, searchDir, graph, comboBoxFile, textFolderRoute))
                 {
@@ -116,16 +116,25 @@ namespace FolderCrawling
             ComboBox comboBoxFile, RichTextBox textFolderRoute)
         {
             int idx = 0;
+            bool found = false;
             for (int i = 0; i < treeArray.Count; i++)
             {
                 string namefile = Path.GetFileName(treeArray[i].Data);
                 treeArray[i].changeData(namefile + " " + "(" + countNode + ")");
                 countNode++;
-                if (namefile == nameDir)
+                if (!found)
                 {
-                    comboBoxFile.Items.Add(treeArray[i].Data);
-                    idx = i;
-                    output.displayTreeDirs(treeArray[i], graph, "blue");
+                    if (namefile == nameDir)
+                    {
+                        comboBoxFile.Items.Add(treeArray[i].Data);
+                        idx = i;
+                        output.displayTreeDirs(treeArray[i], graph, "blue");
+                        found = true;
+                    }
+                    else
+                    {
+                        output.displayTreeDirs(treeArray[i], graph, "red");
+                    }
                 }
                 else
                 {
