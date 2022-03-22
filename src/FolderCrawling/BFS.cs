@@ -104,12 +104,12 @@ namespace FolderCrawling
                     isFound = true;
                     found = true;
                     idx = i;
+                    output.printFolderRoute(save_tree_data, textFolderRoute);
                 }
                 else
                 {
                     output.displayTreeDirs(treeArray[i], graph, "red");
                 }
-                output.printFolderRoute(save_tree_data, textFolderRoute);
 
             }
           
