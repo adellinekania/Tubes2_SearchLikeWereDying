@@ -9,9 +9,10 @@ namespace FolderCrawling
         private bool isFound = false;
         private int countNode = 1;
         private GUIOutput output = new GUIOutput();
+        private List<DirectoryTree> list_of_path = new List<DirectoryTree>();
 
 
-        public void useBFS(DirectoryTree tree,
+        public void useBFSAllOccur(DirectoryTree tree,
             Microsoft.Msagl.Drawing.Graph graph,
             string searchDir,
             ComboBox comboBoxFile,
@@ -24,9 +25,30 @@ namespace FolderCrawling
                 tree_list.Add(tree[i]);
             }
 
-            while(tree_list.Count != 0 && !isFound)
+            while(tree_list.Count != 0)
             {
-                if(searchTreeList(tree_list, searchDir, graph, comboBoxFile, textFolderRoute))
+                searchTreeListModified(tree_list, searchDir, graph, comboBoxFile, textFolderRoute);
+                tree_list = arrayDir(tree_list);
+            }
+
+        }
+
+        public void useBFS(DirectoryTree tree,
+            Microsoft.Msagl.Drawing.Graph graph,
+            string searchDir,
+            ComboBox comboBoxFile,
+            RichTextBox textFolderRoute)
+        {
+            List<DirectoryTree> tree_list = new List<DirectoryTree>();
+            //ini buat disamain sama algo BFS nya ya
+            for (int i = 0; i < tree.Count; i++)
+            {
+                tree_list.Add(tree[i]);
+            }
+
+            while (tree_list.Count != 0)
+            {
+                if (searchTreeList(tree_list, searchDir, graph, comboBoxFile, textFolderRoute))
                 {
                     isFound = true;
                 }
@@ -72,8 +94,8 @@ namespace FolderCrawling
                 countNode++;
                 if (namefile == nameDir)
                 {
-                    output.displayTreeDirs(treeArray[i], graph, "blue");
                     comboBoxFile.Items.Add(treeArray[i].Data);
+                    output.displayTreeDirs(treeArray[i], graph, "blue");
                     isFound = true;
                     found = true;
                     idx = i;
@@ -89,5 +111,37 @@ namespace FolderCrawling
           
             return found;
         }
+
+        public void searchTreeListModified(List<DirectoryTree> treeArray, string nameDir, Microsoft.Msagl.Drawing.Graph graph,
+            ComboBox comboBoxFile, RichTextBox textFolderRoute)
+        {
+            int idx = 0;
+            for (int i = 0; i < treeArray.Count; i++)
+            {
+                string namefile = Path.GetFileName(treeArray[i].Data);
+                treeArray[i].changeData(namefile + " " + "(" + countNode + ")");
+                countNode++;
+                if (namefile == nameDir)
+                {
+                    comboBoxFile.Items.Add(treeArray[i].Data);
+                    idx = i;
+                    output.displayTreeDirs(treeArray[i], graph, "blue");
+                }
+                else
+                {
+                    output.displayTreeDirs(treeArray[i], graph, "red");
+                }
+                output.printFolderRoute(treeArray[i].Data, textFolderRoute);
+
+            }
+        }
+
+        //public void printAllTree(List<DirectoryTree> treeArray, Microsoft.Msagl.Drawing.Graph graph)
+        //{
+        //    for(int i = 0; i < treeArray.Count; i++)
+        //    {
+        //        output.displayTreeDirs(treeArray[i], graph, "blue");
+        //    }
+        //}
     }
 }
