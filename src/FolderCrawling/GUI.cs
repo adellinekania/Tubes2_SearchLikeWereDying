@@ -73,7 +73,6 @@ namespace FolderCrawling
 
             GUIOutput output = new GUIOutput();
 
-
             if (isBFS)
             {
                 BFS bfs = new BFS();
@@ -82,11 +81,11 @@ namespace FolderCrawling
 
                 if (isAllOccurence)
                 {
-                    bfs.searchBFSAllOccur(treeList, 0, graph, fileName, comboBoxFile, textFolderRoute);
+                    bfs.useBFSAllOccur(directoryTree, graph, fileName, comboBoxFile, textFolderRoute);
                 }
                 else
                 {
-                    bfs.searchBFS(treeList, 0, graph, fileName, comboBoxFile, textFolderRoute) ;
+                    bfs.useBFS(directoryTree, graph, fileName, comboBoxFile, textFolderRoute) ;
                 }
             }
 
