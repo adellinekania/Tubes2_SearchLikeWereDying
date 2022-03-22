@@ -1,0 +1,15 @@
+D:\Angelica\semester4\stigma\dfs angel\obj\Debug\net6.0\dfs angel.csproj.AssemblyReference.cache
+D:\Angelica\semester4\stigma\dfs angel\obj\Debug\net6.0\dfs angel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Angelica\semester4\stigma\dfs angel\obj\Debug\net6.0\dfs angel.AssemblyInfoInputs.cache
+D:\Angelica\semester4\stigma\dfs angel\obj\Debug\net6.0\dfs angel.AssemblyInfo.cs
+D:\Angelica\semester4\stigma\dfs angel\obj\Debug\net6.0\dfs angel.csproj.CoreCompileInputs.cache
+D:\Angelica\semester4\stigma\dfs angel\bin\Debug\net6.0\dfs angel.exe
+D:\Angelica\semester4\stigma\dfs angel\bin\Debug\net6.0\dfs angel.deps.json
+D:\Angelica\semester4\stigma\dfs angel\bin\Debug\net6.0\dfs angel.runtimeconfig.json
+D:\Angelica\semester4\stigma\dfs angel\bin\Debug\net6.0\dfs angel.dll
+D:\Angelica\semester4\stigma\dfs angel\bin\Debug\net6.0\dfs angel.pdb
+D:\Angelica\semester4\stigma\dfs angel\obj\Debug\net6.0\dfs angel.dll
+D:\Angelica\semester4\stigma\dfs angel\obj\Debug\net6.0\refint\dfs angel.dll
+D:\Angelica\semester4\stigma\dfs angel\obj\Debug\net6.0\dfs angel.pdb
+D:\Angelica\semester4\stigma\dfs angel\obj\Debug\net6.0\dfs angel.genruntimeconfig.cache
+D:\Angelica\semester4\stigma\dfs angel\obj\Debug\net6.0\ref\dfs angel.dll
