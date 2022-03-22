@@ -121,32 +121,23 @@ namespace FolderCrawling
             ComboBox comboBoxFile, RichTextBox textFolderRoute)
         {
             int idx = 0;
-            bool found = false;
             for (int i = 0; i < treeArray.Count; i++)
             {
                 string namefile = Path.GetFileName(treeArray[i].Data);
                 string save_tree_data = treeArray[i].Data;
                 treeArray[i].changeData(namefile + " " + "(" + countNode + ")");
                 countNode++;
-                if (!found)
+                if (namefile == nameDir)
                 {
-                    if (namefile == nameDir)
-                    {
-                        comboBoxFile.Items.Add(save_tree_data);
-                        idx = i;
-                        output.displayTreeDirs(treeArray[i], graph, "blue");
-                        found = true;
-                    }
-                    else
-                    {
-                        output.displayTreeDirs(treeArray[i], graph, "red");
-                    }
+                    comboBoxFile.Items.Add(save_tree_data);
+                    idx = i;
+                    output.displayTreeDirs(treeArray[i], graph, "blue");
+                    output.printFolderRoute(save_tree_data, textFolderRoute);
                 }
                 else
                 {
                     output.displayTreeDirs(treeArray[i], graph, "red");
                 }
-                output.printFolderRoute(save_tree_data, textFolderRoute);
 
             }
         }
