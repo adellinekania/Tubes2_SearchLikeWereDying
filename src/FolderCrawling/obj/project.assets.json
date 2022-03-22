@@ -115,19 +115,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nadia Mareta\\.nuget\\packages\\": {}
+    "C:\\Users\\Asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Semester4\\StrategiAlgoritma\\Tubes2_SearchLikeWereDying\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\FolderCrawling.csproj",
+      "projectUniqueName": "D:\\IF Semester 4\\Strategi Algoritma\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\FolderCrawling.csproj",
       "projectName": "FolderCrawling",
-      "projectPath": "D:\\Semester4\\StrategiAlgoritma\\Tubes2_SearchLikeWereDying\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\FolderCrawling.csproj",
-      "packagesPath": "C:\\Users\\Nadia Mareta\\.nuget\\packages\\",
-      "outputPath": "D:\\Semester4\\StrategiAlgoritma\\Tubes2_SearchLikeWereDying\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\obj\\",
+      "projectPath": "D:\\IF Semester 4\\Strategi Algoritma\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\FolderCrawling.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "D:\\IF Semester 4\\Strategi Algoritma\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Nadia Mareta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

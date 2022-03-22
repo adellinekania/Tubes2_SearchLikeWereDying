@@ -112,9 +112,13 @@ namespace FolderCrawling
                 else if (color.Equals("red"))
                 {
                     Microsoft.Msagl.Drawing.Color colorr = parentNode.Attr.Color;
+                    Microsoft.Msagl.Drawing.Color colorr2 = childNode.Attr.Color;
                     if (colorr != Microsoft.Msagl.Drawing.Color.Blue)
                     {
                         parentNode.Attr.Color = Microsoft.Msagl.Drawing.Color.Red;
+                    }
+                    if (colorr2 != Microsoft.Msagl.Drawing.Color.Blue)
+                    {
                         childNode.Attr.Color = Microsoft.Msagl.Drawing.Color.Red;
                     }
                 }

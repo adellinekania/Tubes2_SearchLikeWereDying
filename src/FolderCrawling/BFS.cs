@@ -97,19 +97,28 @@ namespace FolderCrawling
                 string save_tree_data = treeArray[i].Data;
                 treeArray[i].changeData(namefile + " " + "(" + countNode + ")");
                 countNode++;
-                if (namefile == nameDir)
+                if (!isFound)
                 {
-                    comboBoxFile.Items.Add(save_tree_data);
-                    output.displayTreeDirs(treeArray[i], graph, "blue");
-                    isFound = true;
-                    found = true;
-                    idx = i;
-                    output.printFolderRoute(save_tree_data, textFolderRoute);
-                }
+                    if (namefile == nameDir)
+                    {
+                        comboBoxFile.Items.Add(save_tree_data);
+                        output.displayTreeDirs(treeArray[i], graph, "blue");
+                        isFound = true;
+                        found = true;
+                        idx = i;
+                        //output.printFolderRoute(save_tree_data, textFolderRoute);
+                    }
+                    else
+                    {
+                        output.displayTreeDirs(treeArray[i], graph, "red");
+                    }
+                    output.printFolderRoute(namefile, textFolderRoute);
+                } 
                 else
                 {
-                    output.displayTreeDirs(treeArray[i], graph, "red");
+                    output.displayTreeDirs(treeArray[i], graph, "black");
                 }
+                
 
             }
           
