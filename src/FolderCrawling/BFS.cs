@@ -12,6 +12,7 @@ namespace FolderCrawling
         private List<DirectoryTree> list_of_path = new List<DirectoryTree>();
 
 
+        //BFS dengan All Occurence
         public void useBFSAllOccur(DirectoryTree tree,
             Microsoft.Msagl.Drawing.Graph graph,
             string searchDir,
@@ -33,6 +34,7 @@ namespace FolderCrawling
 
         }
 
+        //BFS dengan kasus non- All Occurences
         public void useBFS(DirectoryTree tree,
             Microsoft.Msagl.Drawing.Graph graph,
             string searchDir,
@@ -60,6 +62,7 @@ namespace FolderCrawling
 
         }
 
+        //Mencari daftar seluruh directory dan file yang ada pada Parent Tree
         public List<DirectoryTree> arrayDir (List<DirectoryTree> treeArray)
         {
             int total_length = 0;
@@ -82,6 +85,7 @@ namespace FolderCrawling
             return array;
         }
 
+        //Mencari apakah file ada di Children Tree
         public bool searchTreeList(List<DirectoryTree> treeArray, string nameDir, Microsoft.Msagl.Drawing.Graph graph,
             ComboBox comboBoxFile, RichTextBox textFolderRoute)
         {
@@ -90,28 +94,29 @@ namespace FolderCrawling
             for(int i = 0; i < treeArray.Count; i++)
             {
                 string namefile = Path.GetFileName(treeArray[i].Data);
+                string save_tree_data = treeArray[i].Data;
                 treeArray[i].changeData(namefile + " " + "(" + countNode + ")");
                 countNode++;
                 if (namefile == nameDir)
                 {
-                    comboBoxFile.Items.Add(treeArray[i].Data);
+                    comboBoxFile.Items.Add(save_tree_data);
                     output.displayTreeDirs(treeArray[i], graph, "blue");
                     isFound = true;
                     found = true;
                     idx = i;
-                    break;
                 }
                 else
                 {
                     output.displayTreeDirs(treeArray[i], graph, "red");
                 }
-                output.printFolderRoute(treeArray[i].Data, textFolderRoute);
+                output.printFolderRoute(save_tree_data, textFolderRoute);
 
             }
           
             return found;
         }
 
+        //Mencari apakah file ada di Children Tree untuk kasus All Occurence
         public void searchTreeListModified(List<DirectoryTree> treeArray, string nameDir, Microsoft.Msagl.Drawing.Graph graph,
             ComboBox comboBoxFile, RichTextBox textFolderRoute)
         {
@@ -120,13 +125,14 @@ namespace FolderCrawling
             for (int i = 0; i < treeArray.Count; i++)
             {
                 string namefile = Path.GetFileName(treeArray[i].Data);
+                string save_tree_data = treeArray[i].Data;
                 treeArray[i].changeData(namefile + " " + "(" + countNode + ")");
                 countNode++;
                 if (!found)
                 {
                     if (namefile == nameDir)
                     {
-                        comboBoxFile.Items.Add(treeArray[i].Data);
+                        comboBoxFile.Items.Add(save_tree_data);
                         idx = i;
                         output.displayTreeDirs(treeArray[i], graph, "blue");
                         found = true;
@@ -140,17 +146,9 @@ namespace FolderCrawling
                 {
                     output.displayTreeDirs(treeArray[i], graph, "red");
                 }
-                output.printFolderRoute(treeArray[i].Data, textFolderRoute);
+                output.printFolderRoute(save_tree_data, textFolderRoute);
 
             }
         }
-
-        //public void printAllTree(List<DirectoryTree> treeArray, Microsoft.Msagl.Drawing.Graph graph)
-        //{
-        //    for(int i = 0; i < treeArray.Count; i++)
-        //    {
-        //        output.displayTreeDirs(treeArray[i], graph, "blue");
-        //    }
-        //}
     }
 }
