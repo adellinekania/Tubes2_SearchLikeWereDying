@@ -152,7 +152,7 @@ namespace FolderCrawling
         // Method untuk menampilkan rute folder yang ditelusuri
         public void printFolderRoute(string route, RichTextBox textFolderRoute)
         {
-            textFolderRoute.Text += route + "-";
+            textFolderRoute.Text += route;
         }
     }
 }

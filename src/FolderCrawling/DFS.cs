@@ -7,10 +7,11 @@ namespace FolderCrawling
     {
 
         private bool isFound = false;
-        private int countNode = 1;
+        private int countNode = -1;
         private GUIOutput output = new GUIOutput();
-        private List<DirectoryTree> solution = new List<DirectoryTree>();
+        public List<DirectoryTree> solution = new List<DirectoryTree>();
         private bool got_it = false;
+        private int countingNode = 0;
 
 
         //DFS dengan All Occurence
@@ -22,7 +23,7 @@ namespace FolderCrawling
         {
             string path = searchDir;
             string filename = searchFileName;
-            dfsini(tree, path, filename, textFolderRoute);
+            dfsini(tree, path, filename, textFolderRoute,comboBoxFile);
             printTrees(
                 tree,
                 searchDir,
@@ -41,7 +42,7 @@ namespace FolderCrawling
         {
             string path = searchDir;
             string filename = searchFileName;
-            string result = dfsnotall2(tree, path, filename, textFolderRoute);
+            string result = dfsnotall2(tree, path, filename, textFolderRoute,comboBoxFile);
             printTreesNotAll(
                 tree,
                 searchDir,
@@ -55,13 +56,15 @@ namespace FolderCrawling
         public void dfsini(DirectoryTree pohon,
         string path, 
         string filename,
-        RichTextBox textFolderRoute)
+        RichTextBox textFolderRoute,
+        ComboBox comboBoxFile)
         {
             pohon.SetVisited(true);
             if ((pohon.Data).Equals(path) && pohon.Level != 0){
                 solution.Add(pohon);
                 output.printFolderRoute(pohon.Data, textFolderRoute);
-                output.printFolderRoute("\n diatas tadi ini ", textFolderRoute);
+                output.printFolderRoute("\n", textFolderRoute);
+                comboBoxFile.Items.Add(pohon.Data); 
             }
             if (pohon.Count > 0)
             {
@@ -69,7 +72,7 @@ namespace FolderCrawling
                 for (int j = 0 ; j < pohon.Count ; j++)
                 {
                     if (!pohon[j].Visited)
-                        dfsini(pohon[j], temp, filename,textFolderRoute);
+                        dfsini(pohon[j], temp, filename,textFolderRoute,comboBoxFile);
                 }
             }
         }
@@ -77,7 +80,7 @@ namespace FolderCrawling
 
         // mencari satu, masuk ke solution string, if dfsnotall returns true, then ada jawaban di solution.
         // if dfs returns false artinya ngga ada jawaban di solutionnya.
-        public string dfsnotall2(DirectoryTree pohon, string path, string filename, RichTextBox textFolderRoute){
+        public string dfsnotall2(DirectoryTree pohon, string path, string filename, RichTextBox textFolderRoute,ComboBox comboBoxFile){
         
             pohon.SetVisited(true);
             string temp = pohon.Data;
@@ -85,7 +88,7 @@ namespace FolderCrawling
             if (pohon.Data == path && pohon.Level != 0){
                 solution.Add(pohon);
                 output.printFolderRoute(pohon.Data, textFolderRoute);
-                output.printFolderRoute("\n diatas tadi ini ", textFolderRoute);
+                comboBoxFile.Items.Add(pohon.Data);  
                 return temp;
             }
             else{
@@ -95,7 +98,7 @@ namespace FolderCrawling
                 for (int i = 0; i < pohon.Count; i++)
                 {
                     if (!pohon[i].Visited){
-                        string found = dfsnotall2(pohon[i], temp, filename, textFolderRoute);  
+                        string found = dfsnotall2(pohon[i], temp, filename, textFolderRoute, comboBoxFile);  
                         if (!string.IsNullOrEmpty(found)){
                             return found;
                         }
@@ -115,6 +118,7 @@ namespace FolderCrawling
             {
                 for (int i = 0; i < pohon.Count ; i++)
                 {
+                    count--;
                     printTrees(
                         pohon[i],
                         nameDir,
@@ -123,6 +127,7 @@ namespace FolderCrawling
                         textFolderRoute
                     );
                 }
+
             }
             else{
                 string namafile = Path.GetFileName(pohon.Data);
@@ -131,17 +136,13 @@ namespace FolderCrawling
                     foreach(var s in solution){
                         if (pohon.Data.Equals(s.Data) ){
                             found = true;
-                            comboBoxFile.Items.Add(namafile);
-                            pohon.changeData(namafile + " (" + countNode + ")");
-                            output.displayTreeDirs(pohon, graph, "blue");
-                            output.printFolderRoute(pohon.Data, textFolderRoute);
                         }
                     }
-
                 }
                 if (found)
                 {
-                    
+                    pohon.changeData(namafile + " (" + countNode + ")");
+                    output.displayTreeDirs(pohon, graph, "blue");
                 }
                 else if (pohon.Visited)
                 {
@@ -154,7 +155,7 @@ namespace FolderCrawling
             }
         }
 
-        // Untuk Mengeluarkan display tress setelah dfs semuanyaa
+        // Untuk Mengeluarkan display tree setelah dfs semuanyaa
         public void printTreesNotAll(DirectoryTree pohon, string nameDir, Microsoft.Msagl.Drawing.Graph graph,
             ComboBox comboBoxFile, RichTextBox textFolderRoute)
         {
@@ -180,7 +181,6 @@ namespace FolderCrawling
                         if (pohon.Data.Equals(s.Data) ){
                             found = true;
                             got_it = true;
-                            output.printFolderRoute(pohon.Data, textFolderRoute);
                         }
 
                     }
