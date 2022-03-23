@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\IF Semester 4\\Strategi Algoritma\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\FolderCrawling.csproj": {}
+    "D:\\Angelica\\semester4\\stigma\\tubes2_finall\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\FolderCrawling.csproj": {}
   },
   "projects": {
-    "D:\\IF Semester 4\\Strategi Algoritma\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\FolderCrawling.csproj": {
+    "D:\\Angelica\\semester4\\stigma\\tubes2_finall\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\FolderCrawling.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IF Semester 4\\Strategi Algoritma\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\FolderCrawling.csproj",
+        "projectUniqueName": "D:\\Angelica\\semester4\\stigma\\tubes2_finall\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\FolderCrawling.csproj",
         "projectName": "FolderCrawling",
-        "projectPath": "D:\\IF Semester 4\\Strategi Algoritma\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\FolderCrawling.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\IF Semester 4\\Strategi Algoritma\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\obj\\",
+        "projectPath": "D:\\Angelica\\semester4\\stigma\\tubes2_finall\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\FolderCrawling.csproj",
+        "packagesPath": "C:\\Users\\Gresia\\.nuget\\packages\\",
+        "outputPath": "D:\\Angelica\\semester4\\stigma\\tubes2_finall\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gresia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},

@@ -7,7 +7,7 @@ namespace FolderCrawling
 		private readonly DirectoryTree _parent;
 		private readonly int _level;
 		private readonly List<DirectoryTree> _children;
-
+		private bool _visited;
 		public void changeData(string _newData)
         {
 			this._data = _newData;
@@ -32,7 +32,8 @@ namespace FolderCrawling
 		public bool IsLeaf { get { return _children.Count == 0; } }
 		public string Data { get { return _data; } }
 		public DirectoryTree Parent { get { return _parent; } }
-
+		public bool Visited { get { return _visited; } }
+		public void SetVisited ( bool visit ) { _visited = visit; }
 		public DirectoryTree this[int key]
 		{
 			get { return _children[key]; }

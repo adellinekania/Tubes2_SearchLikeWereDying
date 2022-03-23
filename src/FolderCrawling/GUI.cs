@@ -92,13 +92,15 @@ namespace FolderCrawling
             // DFSSSS
             else
             {
+                DFS dfs = new DFS();
+                
                 if (isAllOccurence)
                 {
-
+                    dfs.useDFSAllOccur(directoryTree, graph, fileName, comboBoxFile, textFolderRoute, fileName);
                 }
                 else
                 {
-
+                    dfs.useDFS(directoryTree, graph, fileName, comboBoxFile, textFolderRoute, fileName) ;
                 }
             }
 
