@@ -6,12 +6,10 @@ namespace FolderCrawling
     public class DFS
     {
 
-        private bool isFound = false;
         private int countNode = -1;
         private GUIOutput output = new GUIOutput();
         public List<DirectoryTree> solution = new List<DirectoryTree>();
         private bool got_it = false;
-        private int countingNode = 0;
 
 
         //DFS dengan All Occurence
