@@ -45,13 +45,13 @@ namespace FolderCrawling
         ComboBox comboBoxFile)
         {
             string namefile = Path.GetFileName(pohon.Data);
-            output.printFolderRoute(namefile, textFolderRoute);
-            output.printFolderRoute("\n", textFolderRoute);
             if (pohon.Visited) return;
             pohon.SetVisited(true);
             if ((pohon.Data).Equals(path) && pohon.Level != 0){
                 solution.Add(pohon);
                 comboBoxFile.Items.Add(pohon.Data); 
+                output.printFolderRoute(pohon.Data, textFolderRoute);
+                output.printFolderRoute("\n", textFolderRoute);
             }
             if (pohon.Count > 0)
             {
@@ -66,18 +66,18 @@ namespace FolderCrawling
         }
 
 
-        // mencari satu, masuk ke solution string, if dfsnotall returns true, then ada jawaban di solution.
-        // if dfs returns false artinya ngga ada jawaban di solutionnya.
+        // mencari satu solusi, masuk ke solution string, if dfsnotall returns true dalam bentuk string maka ada jawaban di solution.
+        // jika dfs returns false artinya ngga ada jawaban di solutionnya.
         public string dfsnotall2(DirectoryTree pohon, string path, string filename, RichTextBox textFolderRoute,ComboBox comboBoxFile){
         
             pohon.SetVisited(true);
             string temp = pohon.Data;
             string namefile = Path.GetFileName(pohon.Data);
-            output.printFolderRoute(namefile, textFolderRoute);
-            output.printFolderRoute("\n", textFolderRoute);
             if (pohon.Data == path && pohon.Level != 0){
                 solution.Add(pohon);
                 comboBoxFile.Items.Add(pohon.Data);  
+                output.printFolderRoute(pohon.Data, textFolderRoute);
+                output.printFolderRoute("\n", textFolderRoute);
                 return temp;
             }
             else{
@@ -97,7 +97,7 @@ namespace FolderCrawling
             }
         }    
 
-        // Untuk Mengeluarkan display tress setelah dfs semuanyaa
+        // Mengeluarkan display tree setelah semua simpul dikunjungi
         public void printTrees(DirectoryTree pohon, Microsoft.Msagl.Drawing.Graph graph)
         {
             int count = pohon.Count;
@@ -115,7 +115,7 @@ namespace FolderCrawling
             }
         }
 
-        // Untuk Mengeluarkan display tree setelah dfs semuanyaa
+        // Mengeluarkan display tree untuk kasus pencarian berhenti setelah mendapat 1 solusi
         public void printTreesNotAll(DirectoryTree pohon, Microsoft.Msagl.Drawing.Graph graph)
         {
             if (solution.Count != 0){
@@ -139,24 +139,28 @@ namespace FolderCrawling
             }
         }
 
+        // Mendisplay grafik node ujung
         public void printingTrees (DirectoryTree pohon, Microsoft.Msagl.Drawing.Graph graph){
             bool found = false;
-            foreach(var s in solution){
-                if (pohon.Data.Equals(s.Data) ){
+            foreach(var s in solution)
+            {
+                if (pohon.Data.Equals(s.Data) )
+                {
                     found = true;
                     got_it = true;
                 }
-
             }
             string namafile = Path.GetFileName(pohon.Data);
-            if (found)
+            if (countNode != 0) 
             {
                 pohon.changeData(namafile + " (" + countNode + ")");
+            }
+            if (found)
+            {
                 output.displayTreeDirs(pohon, graph, "blue");
             }
             else if (pohon.Visited)
             {
-                pohon.changeData(namafile + " (" + countNode + ")");
                 output.displayTreeDirs(pohon, graph, "red");
             }
             else {
