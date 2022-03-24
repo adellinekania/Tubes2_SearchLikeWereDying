@@ -72,15 +72,16 @@ namespace FolderCrawling
                  new Microsoft.Msagl.Drawing.Graph("Folder Crawling Graph");
 
             GUIOutput output = new GUIOutput();
-            
-            
-                
+
+            var watch = System.Diagnostics.Stopwatch.StartNew();
+            watch.Start();
+
             if (isBFS)
             {
                 BFS bfs = new BFS();
                 List<DirectoryTree> treeList = new List<DirectoryTree>();
                 treeList.Add(directoryTree);
-                var watch = System.Diagnostics.Stopwatch.StartNew();
+                
                 if (isAllOccurence)
                 {
                     bfs.useBFSAllOccur(directoryTree, graph, fileName, comboBoxFile, textFolderRoute);
@@ -89,16 +90,13 @@ namespace FolderCrawling
                 {
                     bfs.useBFS(directoryTree, graph, fileName, comboBoxFile, textFolderRoute) ;
                 }
-                watch.Stop();
-                var miliSecond = watch.ElapsedMilliseconds;
-                richTextTes.Text += "\nTime Taken: " + miliSecond.ToString() + " ms";
+                
             }
 
             // DFSSSS
             else
             {
                 DFS dfs = new DFS();
-                var watch = System.Diagnostics.Stopwatch.StartNew();
                 if (isAllOccurence)
                 {
                     dfs.useDFSAllOccur(directoryTree, graph, fileName, comboBoxFile, textFolderRoute, fileName);
@@ -107,10 +105,11 @@ namespace FolderCrawling
                 {
                     dfs.useDFS(directoryTree, graph, fileName, comboBoxFile, textFolderRoute, fileName) ;
                 }
-                watch.Stop();
-                var miliSecond = watch.ElapsedMilliseconds;
-                richTextTes.Text += "\nTime Taken: " + miliSecond.ToString() + " ms";
             }
+
+            watch.Stop();
+            var miliSecond = watch.ElapsedMilliseconds;
+            textBoxExecutionTime.Text = "\nTime Taken: " + miliSecond.ToString() + " ms";
 
             graphViewer.Graph = graph;
             graphContainer.Controls.Add(graphViewer);

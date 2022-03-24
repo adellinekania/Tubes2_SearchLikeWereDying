@@ -51,6 +51,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBoxFile = new System.Windows.Forms.ComboBox();
             this.buttonGoToFile = new System.Windows.Forms.Button();
+            this.textBoxExecutionTime = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -239,7 +240,7 @@
             // 
             this.graphContainer.Location = new System.Drawing.Point(564, 175);
             this.graphContainer.Name = "graphContainer";
-            this.graphContainer.Size = new System.Drawing.Size(1223, 493);
+            this.graphContainer.Size = new System.Drawing.Size(1223, 460);
             this.graphContainer.TabIndex = 27;
             // 
             // textFilePathHeader
@@ -306,12 +307,22 @@
             this.buttonGoToFile.UseVisualStyleBackColor = false;
             this.buttonGoToFile.Click += new System.EventHandler(this.buttonGoToFile_Click);
             // 
+            // textBoxExecutionTime
+            // 
+            this.textBoxExecutionTime.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxExecutionTime.Font = new System.Drawing.Font("Berlin Sans FB", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxExecutionTime.Location = new System.Drawing.Point(564, 653);
+            this.textBoxExecutionTime.Name = "textBoxExecutionTime";
+            this.textBoxExecutionTime.Size = new System.Drawing.Size(292, 22);
+            this.textBoxExecutionTime.TabIndex = 40;
+            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1386, 915);
+            this.Controls.Add(this.textBoxExecutionTime);
             this.Controls.Add(this.buttonGoToFile);
             this.Controls.Add(this.comboBoxFile);
             this.Controls.Add(this.label2);
@@ -365,5 +376,6 @@
         private Label label2;
         private ComboBox comboBoxFile;
         private Button buttonGoToFile;
+        private TextBox textBoxExecutionTime;
     }
 }
