@@ -9,7 +9,6 @@ namespace FolderCrawling
         private bool isFound = false;
         private int countNode = 1;
         private GUIOutput output = new GUIOutput();
-        private List<DirectoryTree> list_of_path = new List<DirectoryTree>();
 
 
         //BFS dengan All Occurence
@@ -106,13 +105,13 @@ namespace FolderCrawling
                         isFound = true;
                         found = true;
                         idx = i;
-                        //output.printFolderRoute(save_tree_data, textFolderRoute);
+                        output.printFolderRoute(save_tree_data, textFolderRoute);
                     }
                     else
                     {
                         output.displayTreeDirs(treeArray[i], graph, "red");
                     }
-                    output.printFolderRoute(namefile, textFolderRoute);
+                    //output.printFolderRoute(namefile, textFolderRoute);
                 } 
                 else
                 {
