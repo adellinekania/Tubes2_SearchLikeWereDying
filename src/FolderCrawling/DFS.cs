@@ -56,7 +56,7 @@ namespace FolderCrawling
             if (pohon.Count > 0)
             {
                 string temp = pohon.Data +"\\"+ filename;
-                for (int j = 0 ; j < pohon.Count ; j++)
+                for (int j = pohon.Count-1; j >= 0; j--)
                 {
                     if (!pohon[j].Visited)
                         dfsini(pohon[j], temp, filename,textFolderRoute,comboBoxFile);
@@ -84,7 +84,7 @@ namespace FolderCrawling
                 if (pohon.Count > 0) {
                     temp = pohon.Data +"\\"+ filename;
                 }
-                for (int i = 0; i < pohon.Count; i++)
+                for (int i = pohon.Count-1; i >= 0; i--)
                 {
                     if (!pohon[i].Visited){
                         string found = dfsnotall2(pohon[i], temp, filename, textFolderRoute, comboBoxFile);  
@@ -105,7 +105,7 @@ namespace FolderCrawling
             if (count > 0)
             {
                 printingTrees(pohon,graph);
-                for (int i = 0; i < pohon.Count ; i++)
+                for (int i = pohon.Count-1; i >= 0; i--)
                 {
                     printTrees(pohon[i], graph);
                 }
@@ -122,14 +122,15 @@ namespace FolderCrawling
                 int count = pohon.Count;
                 countNode++;
                 
-                if (count > 0 && (pohon != solution[0]) && !got_it)
+                if (count > 0 && !got_it)
                 {
-                    for (int i = 0; i < pohon.Count ; i++)
+                    printingTrees(pohon, graph);
+                    for (int i = pohon.Count-1; i >= 0; i--)
                     {
                         printTreesNotAll(pohon[i],graph);
                     }
                 }
-                else{
+                else if (!got_it ){
                     printingTrees(pohon, graph);
                 }
             }
