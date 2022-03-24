@@ -106,6 +106,7 @@ namespace FolderCrawling
                         found = true;
                         idx = i;
                         output.printFolderRoute(save_tree_data, textFolderRoute);
+                        output.printFolderRoute("\n", textFolderRoute);
                     }
                     else
                     {
@@ -141,6 +142,7 @@ namespace FolderCrawling
                     idx = i;
                     output.displayTreeDirs(treeArray[i], graph, "blue");
                     output.printFolderRoute(save_tree_data, textFolderRoute);
+                    output.printFolderRoute("\n", textFolderRoute);
                 }
                 else
                 {
