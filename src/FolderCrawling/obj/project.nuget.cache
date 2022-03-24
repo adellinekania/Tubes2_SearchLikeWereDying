@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "bqj330lYFUbYxQVHgJJRtsmrXj3v1g377Tg4Nxnnhp17GTYY1e29wHL4A79jSjxdfiqcRmQLgsbR3onWMhoFhA==",
+  "dgSpecHash": "ZndiYW3xL1eWuDT0NGIGE/tfrDFcfmjXEOqPzZKaMPuLMd0v+WzgMsu8gY9hpkuE+GMbUqyAHwzzSWDGn3OSWA==",
   "success": true,
-  "projectFilePath": "D:\\IF Semester 4\\Strategi Algoritma\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\FolderCrawling.csproj",
+  "projectFilePath": "D:\\Angelica\\semester4\\stigma\\tubes2_finallll\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\FolderCrawling.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Asus\\.nuget\\packages\\automaticgraphlayout\\1.1.11\\automaticgraphlayout.1.1.11.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\automaticgraphlayout.drawing\\1.1.11\\automaticgraphlayout.drawing.1.1.11.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\automaticgraphlayout.graphviewergdi\\1.1.11\\automaticgraphlayout.graphviewergdi.1.1.11.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\automaticgraphlayout.wpfgraphcontrol\\1.1.11\\automaticgraphlayout.wpfgraphcontrol.1.1.11.nupkg.sha512"
+    "C:\\Users\\Gresia\\.nuget\\packages\\automaticgraphlayout\\1.1.11\\automaticgraphlayout.1.1.11.nupkg.sha512",
+    "C:\\Users\\Gresia\\.nuget\\packages\\automaticgraphlayout.drawing\\1.1.11\\automaticgraphlayout.drawing.1.1.11.nupkg.sha512",
+    "C:\\Users\\Gresia\\.nuget\\packages\\automaticgraphlayout.graphviewergdi\\1.1.11\\automaticgraphlayout.graphviewergdi.1.1.11.nupkg.sha512",
+    "C:\\Users\\Gresia\\.nuget\\packages\\automaticgraphlayout.wpfgraphcontrol\\1.1.11\\automaticgraphlayout.wpfgraphcontrol.1.1.11.nupkg.sha512"
   ],
   "logs": []
 }
