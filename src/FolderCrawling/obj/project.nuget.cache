@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZndiYW3xL1eWuDT0NGIGE/tfrDFcfmjXEOqPzZKaMPuLMd0v+WzgMsu8gY9hpkuE+GMbUqyAHwzzSWDGn3OSWA==",
+  "dgSpecHash": "3IcJueCzr3qDXw4jiKW0AFwbWhyWOLcKrhSErJw4pUxLU/e0OJj8DJ+mxItrTnXHhhf4W9ddCcnH9fFd+tVZNQ==",
   "success": true,
-  "projectFilePath": "D:\\Angelica\\semester4\\stigma\\tubes2_finallll\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\FolderCrawling.csproj",
+  "projectFilePath": "D:\\Angelica\\semester4\\stigma\\tubes2_angel\\Tubes2_SearchLikeWereDying\\src\\FolderCrawling\\FolderCrawling.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gresia\\.nuget\\packages\\automaticgraphlayout\\1.1.11\\automaticgraphlayout.1.1.11.nupkg.sha512",
     "C:\\Users\\Gresia\\.nuget\\packages\\automaticgraphlayout.drawing\\1.1.11\\automaticgraphlayout.drawing.1.1.11.nupkg.sha512",
