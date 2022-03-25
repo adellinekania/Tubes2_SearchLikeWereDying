@@ -101,3 +101,15 @@ D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderC
 D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.dll
 D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\ref\FolderCrawling.dll
 D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.pdb
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\FolderCrawling.exe
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\FolderCrawling.deps.json
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\FolderCrawling.runtimeconfig.json
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\FolderCrawling.dll
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\FolderCrawling.pdb
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\AutomaticGraphLayout.dll
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\AutomaticGraphLayout.Drawing.dll
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\Microsoft.Msagl.GraphViewerGdi.dll
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\bin\Debug\net6.0-windows\Microsoft.Msagl.WpfGraphControl.dll
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.csproj.CopyComplete
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\refint\FolderCrawling.dll
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.genruntimeconfig.cache
