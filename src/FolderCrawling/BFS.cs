@@ -105,14 +105,13 @@ namespace FolderCrawling
                         isFound = true;
                         found = true;
                         idx = i;
-                        output.printFolderRoute(save_tree_data, textFolderRoute);
-                        output.printFolderRoute("\n", textFolderRoute);
                     }
                     else
                     {
                         output.displayTreeDirs(treeArray[i], graph, "red");
                     }
-                    //output.printFolderRoute(namefile, textFolderRoute);
+                    output.printFolderRoute(namefile, textFolderRoute);
+                    output.printFolderRoute("\n", textFolderRoute);
                 } 
                 else
                 {
@@ -141,13 +140,13 @@ namespace FolderCrawling
                     comboBoxFile.Items.Add(save_tree_data);
                     idx = i;
                     output.displayTreeDirs(treeArray[i], graph, "blue");
-                    output.printFolderRoute(save_tree_data, textFolderRoute);
-                    output.printFolderRoute("\n", textFolderRoute);
                 }
                 else
                 {
                     output.displayTreeDirs(treeArray[i], graph, "red");
                 }
+                output.printFolderRoute(namefile, textFolderRoute);
+                output.printFolderRoute("\n", textFolderRoute);
 
             }
         }
