@@ -1,0 +1,8 @@
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Release\net6.0-windows\FolderCrawling.csproj.AssemblyReference.cache
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Release\net6.0-windows\FolderCrawling.GUI.resources
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Release\net6.0-windows\FolderCrawling.Properties.Resources.resources
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Release\net6.0-windows\FolderCrawling.csproj.GenerateResource.cache
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Release\net6.0-windows\FolderCrawling.GeneratedMSBuildEditorConfig.editorconfig
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Release\net6.0-windows\FolderCrawling.AssemblyInfoInputs.cache
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Release\net6.0-windows\FolderCrawling.AssemblyInfo.cs
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Release\net6.0-windows\FolderCrawling.csproj.CoreCompileInputs.cache

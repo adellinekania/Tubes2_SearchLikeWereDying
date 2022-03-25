@@ -90,3 +90,14 @@ D:\Angelica\semester4\stigma\tubes2_finallll\Tubes2_SearchLikeWereDying\src\Fold
 D:\Angelica\semester4\stigma\tubes2_finallll\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.pdb
 D:\Angelica\semester4\stigma\tubes2_finallll\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.genruntimeconfig.cache
 D:\Angelica\semester4\stigma\tubes2_finallll\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\ref\FolderCrawling.dll
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.csproj.AssemblyReference.cache
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.GUI.resources
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.Properties.Resources.resources
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.csproj.GenerateResource.cache
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.GeneratedMSBuildEditorConfig.editorconfig
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.AssemblyInfoInputs.cache
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.AssemblyInfo.cs
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.csproj.CoreCompileInputs.cache
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.dll
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\ref\FolderCrawling.dll
+D:\Angelica\semester4\stigma\tubes2_angel\Tubes2_SearchLikeWereDying\src\FolderCrawling\obj\Debug\net6.0-windows\FolderCrawling.pdb
