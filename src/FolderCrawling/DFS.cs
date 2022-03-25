@@ -45,13 +45,13 @@ namespace FolderCrawling
         ComboBox comboBoxFile)
         {
             string namefile = Path.GetFileName(pohon.Data);
+            output.printFolderRoute(namefile, textFolderRoute);
+            output.printFolderRoute("\n", textFolderRoute);
             if (pohon.Visited) return;
             pohon.SetVisited(true);
             if ((pohon.Data).Equals(path) && pohon.Level != 0){
                 solution.Add(pohon);
                 comboBoxFile.Items.Add(pohon.Data); 
-                output.printFolderRoute(pohon.Data, textFolderRoute);
-                output.printFolderRoute("\n", textFolderRoute);
             }
             if (pohon.Count > 0)
             {
@@ -73,11 +73,11 @@ namespace FolderCrawling
             pohon.SetVisited(true);
             string temp = pohon.Data;
             string namefile = Path.GetFileName(pohon.Data);
+            output.printFolderRoute(namefile, textFolderRoute);
+            output.printFolderRoute("\n", textFolderRoute);
             if (pohon.Data == path && pohon.Level != 0){
                 solution.Add(pohon);
                 comboBoxFile.Items.Add(pohon.Data);  
-                output.printFolderRoute(pohon.Data, textFolderRoute);
-                output.printFolderRoute("\n", textFolderRoute);
                 return temp;
             }
             else{
