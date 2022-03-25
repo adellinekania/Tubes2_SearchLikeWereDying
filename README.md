@@ -2,10 +2,7 @@
 
 ## Table of Contents
 - [General Information](#general-information)
-- [Greedy Strategy](#greedy-strategy)
-- [Requirements](#requirement)
-- [Depedencies](#depedencies)
-- [How To Build](#how-to-build)
+- [Requirement](#requirement)
 - [How To Run](#how-to-run)
 - [Authors](#authors)
 
