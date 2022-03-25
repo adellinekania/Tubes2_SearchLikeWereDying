@@ -19,7 +19,7 @@ with Folder Crawl. In addition, there is also a visualization of the results of 
 ## How To Run
 First, clone this repository
 ```
-git clone https://github.com/adellinekania/Tubes1_BeatingMarioKart.git
+git clone https://github.com/adellinekania/Tubes2_SearchLikeWereDying.git
 ```
 Go to bin folder and simply double click the ```FolderCrawling```
 
